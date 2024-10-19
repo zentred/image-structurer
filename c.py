@@ -1,4 +1,4 @@
-import sys, os, math
+import os, math
 from PIL import Image
 
 max_images_per_line = 8
