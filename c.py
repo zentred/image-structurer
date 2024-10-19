@@ -19,7 +19,7 @@ image_batches = [
 ]
 
 total_height, max_width, new_images = 0, 0, []
-for n, image_list in enumerate(image_batches):
+for image_list in image_batches:
     widths, heights = zip(*(i.size for i in image_list))
 
     total_width = sum(widths)
