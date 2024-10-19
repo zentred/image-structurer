@@ -9,7 +9,7 @@ def sort_images():
         return int(n.split('_')[1].split('.')[0])
 
     for a, b, c in os.walk('./images'):
-        c.sort(key=sort_key)
+        #c.sort(key=sort_key) only needed if your file names contain numbers and are sorted by the numbers
         return c
 
 images = [Image.open(f'images/{filename}') for filename in sort_images()]
